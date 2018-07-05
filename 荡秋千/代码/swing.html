@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<link rel="stylesheet" href="animate.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://www.dreamdu.com/style.css" />
+	<title>wuli丁海寅</title>
+		<style type="text/css">
+		 body{
+		 cursor: url('heart.jpg'),default; 
+		 }  
+		</style>
+</head>
+<body>
+	<div  align="center" style="height:1000px;">
+		<img id="pic" src="oba.jpg" style="width:415px;height:435px;"></img>
+	</div>
+</body>
+
+</html>
+<script>
+//$(document).ready(function(){
+
+$("#pic").mouseover(function(){
+		$(this).addClass("animated swing");
+		setTimeout("remove()", 1000);
+	//setInterval(function(){ $(this).removeClass("animated swing"); }, 3000);
+	//setInterval('$(this).removeClass("animated swing");', 3000);
+	});	
+	$("#pic").mouseleave(function(){
+		$(this).addClass("animated swing");
+		setTimeout("remove()", 1000);
+	//$(this).addClass("animated swing");
+		//setInterval('$(this).removeClass("animated swing");', 3000);
+		//$(this).delay(800000).removeClass("animated swing");
+	});
+	
+
+//});
+function remove() {
+  $("#pic").removeClass("animated swing");
+}
+</script>
